@@ -31,6 +31,7 @@
 			// round trip time
 			const fullTime = currentTime - window.performance.timing.requestStart;
 			document.getElementById('p-full-time').innerHTML = fullTime;
+			console.log('FULL TIME SINCE SVELTE EATS IT', fullTime);
 		</script>
 	</div>
 </div>

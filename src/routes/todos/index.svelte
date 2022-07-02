@@ -17,8 +17,8 @@
 	<meta name="description" content="A todo list app" />
 </svelte:head>
 
-<div class="todos">
-	<h1>Todos</h1>
+<div>
+	<h1>Look in console because Svelte eats my numbers 😭</h1>
 	<div>
 		<h2>
 			Request-to-paint time: <span id="p-full-time" />

@@ -40,6 +40,7 @@
 	<img
 		src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
 		style="width: 48px;"
+		alt="svelte logo"
 	/>
 	<h1>Theo's Crappy Benchmark (Svelte On Vercel Edge)</h1>
 	<h2>Svelte likes to override my script so check console for real #s</h2>

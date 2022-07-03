@@ -9,6 +9,8 @@
 			const currentTime = new Date();
 			// round trip time
 			const fullTime = currentTime - window.performance.timing.requestStart;
+
+			console.log('SVELTE REPORTS', fullTime);
 			return fullTime;
 		}
 
@@ -45,9 +47,16 @@
 <Card />
 
 <main>
-	<h1><span>Hello from the edge!</span></h1>
-	<h2><span>Full request to render time: {performance()}ms</span></h2>
-
+	<h2>Svelte likes to override my script so check console for real #s</h2>
+	<h2><span>Full request to render time (according to Svelte):{performance()}ms</span></h2>
+	<h2><span>Full request to render time (according to Theo): <span id="overrideme" />ms</span></h2>
+	<script>
+		const currentTime = new Date();
+		// round trip time
+		const fullTime = currentTime - window.performance.timing.requestStart;
+		document.getElementById('overrideme').innerHTML = fullTime;
+		console.log('THEO REPORTS', fullTime);
+	</script>
 	<div class="info">
 		<div class="block">
 			<div class="contents">

@@ -43,6 +43,11 @@
 		const fullTime = currentTime - window.performance.timing.requestStart;
 		document.getElementById('overrideme').innerHTML = fullTime;
 		console.log('THEO REPORTS', fullTime);
+
+		const times = JSON.parse(localStorage.getItem('svelte-edge-times-store')) ?? [];
+		times.push(fullTime);
+		localStorage.setItem('svelte-edge-times-store', JSON.stringify(times));
+		console.table(times);
 	</script>
 </main>
 

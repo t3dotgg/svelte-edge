@@ -20,20 +20,11 @@
 
 <script>
 	import '../app.css';
-	import card from '$lib/twitter-card.jpg';
-	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
-	<title>SvelteKit on the edge</title>
+	<title>T3 Benchmarks Svelte + Vercel Edge</title>
 	<meta name="description" content="HTML, dynamically rendered in a city near you" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@vercel" />
-	<meta name="twitter:creator" content="@sveltejs" />
-	<meta name="twitter:title" content="SvelteKit on the edge" />
-	<meta name="twitter:description" content="HTML, dynamically rendered in a city near you" />
-	<meta name="twitter:image" content="{$page.url.origin}{card}" />
-	<meta name="twitter:image:alt" content="The Vercel and Svelte logos" />
 </svelte:head>
 
 <main>

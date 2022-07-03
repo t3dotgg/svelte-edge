@@ -10,6 +10,8 @@
 	export let todos: Todo[];
 
 	console.log('todos?', todos);
+
+	console.log('Re-running svelte...just because? lmao');
 </script>
 
 <svelte:head>
